@@ -12,7 +12,7 @@ const ticketPrice = km * 0.21;
 
 if (age < 18) {
 
-    
+
 //! Sconto del 20% per i minorenni
 
 
@@ -20,3 +20,13 @@ if (age < 18) {
   const finalPrice = ticketPrice - discount;
   alert(`Il prezzo del tuo biglietto è di ${finalPrice.toFixed(2)} €`);
 } 
+
+
+//! Sconto del 40% per gli over 65
+
+ else if (age >= 65) {
+    // Sconto del 40% per gli over 65
+    const discount = ticketPrice * 0.4;
+    const finalPrice = ticketPrice - discount;
+    alert(`Il prezzo del tuo biglietto è di ${finalPrice.toFixed(2)} €`);
+  } else 
